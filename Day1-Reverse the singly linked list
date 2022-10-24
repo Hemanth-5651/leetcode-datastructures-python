@@ -1,0 +1,13 @@
+#Reversing a singly linked llist
+#it means we are having an linked list we need to return the linked list which results the reverse of the given linked list
+
+Sol:
+
+def Reverse_singly_linked_list(self,head):
+  temp=none
+  while head:
+    current=head
+    head=head.next
+    current.next=temp
+    temp=current
+  return current
